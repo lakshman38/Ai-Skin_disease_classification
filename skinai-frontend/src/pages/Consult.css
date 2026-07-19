@@ -1,0 +1,58 @@
+.consult-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle, #020617, #000);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.consult-title {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.doctor-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  width: 280px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.3);
+  transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+  transform: scale(1.05);
+}
+
+.doctor-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  margin-bottom: 12px;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.action-row button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: cyan;
+}
+

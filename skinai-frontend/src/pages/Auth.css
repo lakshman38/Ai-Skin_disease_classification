@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #020617, #020b2e);
+  font-family: 'Segoe UI', sans-serif;
+
+
+}
+.auth-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  padding: 40px;
+  width: 380px;
+  color: white;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.auth-card.large {
+  width: 420px;
+}
+
+.auth-card h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.auth-card input::placeholder {
+  color: #cbd5f5;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(90deg, #22d3ee, #2563eb);
+  color: black;
+  cursor: pointer;
+}
+
+.rules {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.rules ul {
+  padding-left: 18px;
+  margin: 8px 0;
+}
+
+.rules li {
+  margin-bottom: 4px;
+}
+
+.rules small {
+  display: block;
+  margin-top: 8px;
+  color: #38bdf8;
+}
+
+.link {
+  margin-top: 18px;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.error {
+  color: #f87171;
+  margin-top: 10px;
+}

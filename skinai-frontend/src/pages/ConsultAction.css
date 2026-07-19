@@ -1,0 +1,39 @@
+.action-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle, #020617, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-card {
+  width: 320px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 50px rgba(0,255,255,0.4);
+}
+
+.primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 25px;
+  border: none;
+  background: cyan;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid cyan;
+  color: white;
+  cursor: pointer;
+}

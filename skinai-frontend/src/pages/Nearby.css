@@ -1,0 +1,84 @@
+.nearby-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+  padding: 40px;
+}
+
+.nearby-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px cyan;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.nearby-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.nearby-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 45px rgba(0, 255, 255, 0.6);
+}
+
+.card-glow {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle, rgba(0,255,255,0.25), transparent 60%);
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.nearby-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.type {
+  color: cyan;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.addr {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.bottom-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.distance {
+  font-size: 14px;
+}
+
+.bottom-row button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,163 @@
+.scan-bg {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* 🔥 THIS FIXES BUTTON CLICKS */
+  background:
+    radial-gradient(circle at center, rgba(0,255,255,0.15), transparent 45%),
+    radial-gradient(circle at 30% 70%, rgba(0,120,255,0.2), transparent 40%);
+  animation: pulse 5s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+.scan-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.scan-circle {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00e5ff, #0066ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 40px #00e5ff;
+  animation: glow 2s infinite alternate;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px #00e5ff; }
+  to { box-shadow: 0 0 60px #00e5ff; }
+}
+
+.preview-box img {
+  max-width: 260px;
+  margin-top: 25px;
+  border-radius: 15px;
+  border: 2px solid cyan;
+}
+
+.btn-row {
+  margin-top: 20px;
+}
+
+.btn-row button {
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #00e5ff;
+  font-weight: bold;
+}
+
+.btn-row .reset {
+  background: transparent;
+  color: white;
+  border: 1px solid cyan;
+}
+
+.result-card {
+  margin: 30px auto;
+  width: 260px;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+.preview-box {
+  margin-top: 30px;
+}
+
+.preview-box img {
+  width: 380px;          /* 🔥 BIG IMAGE */
+  max-width: 90%;
+  border-radius: 20px;
+  border: 2px solid cyan;
+  box-shadow: 0 0 30px rgba(0,255,255,0.6);
+}
+
+.scan-circle {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00e5ff, #0066ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 40px #00e5ff;
+  animation: glow 2s infinite alternate;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-row {
+  margin-top: 25px;
+}
+
+.btn-row button {
+  padding: 14px 34px;
+  margin: 12px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+/* CONSULT DOCTOR BUTTON */
+.consult-btn {
+  margin-top: 18px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #00e5ff, #0066ff);
+  color: #020617;
+  font-size: 16px;
+  font-weight: bold;
+
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.7);
+  animation: consultGlow 2s infinite alternate;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.consult-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(0, 229, 255, 1);
+}
+
+/* GLOW ANIMATION */
+@keyframes consultGlow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+  }
+  to {
+    box-shadow: 0 0 45px rgba(0, 229, 255, 1);
+  }
+}

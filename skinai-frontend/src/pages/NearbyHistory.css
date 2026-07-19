@@ -1,0 +1,48 @@
+.nearby-history-bg {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  padding: 30px;
+}
+
+.nearby-history-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.nearby-history-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+.nearby-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(0,255,255,0.3);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.15);
+}
+
+.nearby-row h3 {
+  margin: 0;
+  color: #00e5ff;
+}
+
+.nearby-row button {
+  background: #00e5ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

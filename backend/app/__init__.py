@@ -1,5 +1,0 @@
-"""
-SkinAI backend package.
-"""
-
-
